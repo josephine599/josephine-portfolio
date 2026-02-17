@@ -1,0 +1,18 @@
+.about-section {
+  background-color: #f8fafc;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #1e293b;
+}
+
+.about-text {
+  font-size: 1.25rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #334155;
+  line-height: 1.8;
+}

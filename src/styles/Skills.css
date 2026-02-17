@@ -1,0 +1,33 @@
+.skills-section {
+  background-color: #f1f5f9;
+  text-align: center;
+}
+
+.skills-title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.skills-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.skill-item {
+  background-color: #38bdf8;
+  color: #1e293b;
+  font-weight: 600;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  background-color: #22d3ee;
+}

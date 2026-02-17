@@ -1,0 +1,77 @@
+/* Hero Section */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* content starts from top */
+  align-items: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  min-height: auto; /* allows Hero to shrink naturally */
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+}
+
+/* Container for the profile image */
+.hero-image-container {
+  margin-bottom: 2rem;
+}
+
+/* Profile Image — slightly bigger now */
+.hero-image {
+  width: 350px;         /* bigger than before */
+  height: 350px;
+  border-radius: 50%;   /* circular */
+  border: 5px solid #38bdf8; /* bright accent border */
+  object-fit: cover;    /* keeps proportions */
+  max-width: 90%;       /* responsive on small screens */
+  margin-bottom: 2rem;
+}
+
+/* Hero Title */
+.hero-title {
+  font-size: 3.5rem; 
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Highlighted Name */
+.hero-name {
+  color:white;
+}
+
+/* Hero Subtitle */
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  max-width: 650px;
+}
+
+/* Hero Button */
+.hero-button {
+  padding: 1rem 2rem;
+  font-weight: 600;
+  background-color: #38bdf8;
+  color: #1e293b;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #22d3ee;
+  transform: translateY(-3px);
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+  .hero-image {
+    width: 200px;  /* scales down on small screens */
+    height: 200px;
+  }
+}

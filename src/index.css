@@ -1,0 +1,28 @@
+/* Reset & Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+  line-height: 1.6;
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+/* Make all sections full width and spacing */
+section {
+  width: 100%;
+  padding: 6rem 2rem;
+}
+
+h2 {
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+html {
+  scroll-behavior: smooth;
+}
