@@ -9,20 +9,233 @@ body {
   font-family: 'Inter', sans-serif;
   scroll-behavior: smooth;
   line-height: 1.6;
-  background-color: #f8fafc;
-  color: #0f172a;
+  background-color: #f1f5f9; /* main background */
+  color: #1e293b; /* primary text color */
 }
 
-/* Make all sections full width and spacing */
-section {
-  width: 100%;
-  padding: 6rem 2rem;
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: #1e293b;
 }
 
 h2 {
-  font-weight: 700;
   margin-bottom: 1.5rem;
 }
-html {
-  scroll-behavior: smooth;
+
+/* Links */
+a {
+  color: #3b82f6;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #1e40af;
+}
+
+/* Buttons */
+button, .hero-button, .project-button, .about-button {
+  font-weight: 600;
+  padding: 0.8rem 1.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.hero-button, .project-button {
+  background-color: #3b82f6;
+  color: #ffffff;
+}
+
+.hero-button:hover, .project-button:hover {
+  background-color: #1e40af;
+}
+
+.about-button {
+  background-color: #14b8a6;
+  color: #ffffff;
+}
+
+.about-button:hover {
+  background-color: #0f766e;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-logo {
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.nav-links a {
+  margin-left: 1.5rem;
+  color: #1e293b;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #3b82f6;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #f1f5f9 0%, #ffffff 100%);
+}
+
+.hero-image-container {
+  width: 180px;
+  height: 180px;
+  margin-bottom: 1.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #1e293b;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #3b82f6;
+}
+
+.hero-button {
+  margin-top: 1rem;
+}
+
+/* About Section */
+.about-section {
+  background-color: #ffffff;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.about-text {
+  margin-bottom: 1.2rem;
+  color: #1e293b;
+}
+
+.about-button {
+  margin-top: 1.5rem;
+}
+
+/* Skills Section */
+.skills-section {
+  background-color: #f8fafc;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.skill-item {
+  background-color: #3b82f6;
+  color: blue;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* Projects Section */
+.projects-section {
+  background-color: #ffffff;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background-color: #f1f5f9;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.project-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.project-title {
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.project-description {
+  color: #475569;
+  margin-bottom: 1rem;
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: #f8fafc;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.contact-section input,
+.contact-section textarea {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 1rem;
+  padding: 0.7rem;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+}
+
+.contact-section button {
+  background-color: #3b82f6;
+  color: #ffffff;
+}
+
+.contact-section button:hover {
+  background-color: #1e40af;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-image-container {
+    width: 140px;
+    height: 140px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  section {
+    padding: 4rem 1.5rem;
+  }
 }

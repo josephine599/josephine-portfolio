@@ -1,102 +1,48 @@
 .projects-section {
-  padding: 6rem 2rem;
-  background-color: #f8fafc;
-  text-align: center;
-}
-
-.projects-title {
-  font-size: 3rem;
-  margin-bottom: 3rem;
-  font-weight: 700;
-  color: #1e293b;
-}
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
-.project-card {
-  background-color: white;
-  border-radius: 0.75rem;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  padding: 1.5rem;
-  transition: transform 0.3s, box-shadow 0.3s;
+.projects-title {
+  text-align: center;
 }
 
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+.projects-intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
 }
 
 .project-image {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-.project-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 0.75rem;
-  color: #0f172a;
-}
-
-.project-description {
-  font-size: 1rem;
-  margin-bottom: 1.25rem;
-  color: #334155;
+  border-radius: 6px;
 }
 
 .project-buttons {
   display: flex;
-  justify-content: center;
-  gap: 1rem;
+  gap: 0.5rem;
   flex-wrap: wrap;
 }
 
 .project-button {
-  padding: 0.75rem 1.5rem;
-  background-color: #38bdf8;
-  color: #1e293b;
-  font-weight: 600;
-  border-radius: 0.5rem;
-  text-decoration: none;
-  transition: all 0.3s;
+  flex: 1;
+  text-align: center;
+  padding: 0.6rem;
+  border-radius: 6px;
+  background-color: #0070f3;
+  color: #fff;
+  font-weight: 500;
+  transition: background 0.3s;
 }
 
 .project-button:hover {
-  background-color: #22d3ee;
-  transform: translateY(-3px);
-}
-.project-card:hover .project-image {
-  transform: scale(1.05);
-  transition: transform 0.3s;
-}
-
-.project-card:hover {
-  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-  transform: translateY(-5px);
-}
-.projects-intro {
-  max-width: 800px;
-  margin: 0 auto 2rem auto;
-  font-size: 1.2rem;
-  color: #334155;
-  line-height: 1.6;
-}
-
-.projects-intro a {
-  color: #38bdf8;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.projects-intro a:hover {
-  color: #22d3ee;
+  background-color: #005bb5;
 }

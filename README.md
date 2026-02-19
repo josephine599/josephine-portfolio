@@ -20,7 +20,7 @@ The portfolio is built with **React** and **Vite**, featuring smooth scrolling, 
 - Contact section with email, phone, LinkedIn, and contact form  
 
 ## 📂 Project Links
-- **Live Portfolio:** [View Here](#)  
+- **Live Portfolio:** [https://verdant-dolphin-daad18.netlify.app/] 
 - **GitHub Repository:** [josephine599](https://github.com/josephine599)  
 
 ## 📫 Contact Me
