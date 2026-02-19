@@ -152,7 +152,7 @@ nav {
 
 .skill-item {
   background-color: #3b82f6;
-  color: blue;
+  color: #ffffff;
   padding: 0.5rem 1rem;
   border-radius: 6px;
   font-weight: 500;
@@ -237,5 +237,21 @@ nav {
 
   section {
     padding: 4rem 1.5rem;
+  }
+}
+
+/* Mobile Navbar Adjustments */
+@media (max-width: 480px) {
+  nav {
+    padding: 0.5rem 1rem; /* smaller vertical padding */
+  }
+
+  .nav-logo {
+    font-size: 1.2rem; /* smaller logo */
+  }
+
+  .nav-links a {
+    margin-left: 1rem; /* reduce spacing */
+    font-size: 0.9rem; /* smaller text */
   }
 }
