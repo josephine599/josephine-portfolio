@@ -2,7 +2,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0rem 0.5rem;
+  padding: 0.1rem 0.5rem; /* normal desktop */
   background-color: pink;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   position: sticky;
@@ -24,20 +24,25 @@ nav {
   color: #0070f3;
 }
 
-/* Mobile menu */
+/* Mobile */
 @media (max-width: 768px) {
   nav {
-    flex-direction: column;
-    align-items: flex-start;
+    padding: 0.2rem 0.8rem; /* VERY small padding */
+  }
+
+  .nav-logo {
+    font-size: 1rem; /* smaller logo text */
   }
 
   .nav-links {
     display: flex;
     flex-direction: column;
     width: 100%;
+    gap: 0.2rem; /* tighter spacing */
   }
 
   .nav-links a {
-    margin: 0.5rem 0;
+    margin: 0.2rem 0; /* reduce vertical space */
+    font-size: 0.9rem;
   }
 }
