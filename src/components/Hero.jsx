@@ -43,7 +43,7 @@ export default function Hero() {
         transition={{ duration: 0.8, delay: 0.4 }}
         viewport={{ once: false }}
       >
-        Josephine Anyango
+       Hi, I'm Josephine Anyango
       </motion.h1>
 
       {/* Typing Role Animation */}

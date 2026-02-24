@@ -2,20 +2,26 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.1rem 0.5rem; /* normal desktop */
+  padding: 0.6rem 1.2rem; /* clean desktop padding */
   background-color: pink;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .nav-logo {
   font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* Desktop Links */
+.nav-links {
+  display: flex;
+  gap: 2rem;
 }
 
 .nav-links a {
-  margin-left: 2rem;
   font-weight: 500;
   transition: color 0.3s;
 }
@@ -24,25 +30,45 @@ nav {
   color: #0070f3;
 }
 
-/* Mobile */
+/* Hamburger (hidden on desktop) */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* ===== MOBILE ===== */
 @media (max-width: 768px) {
+
   nav {
-    padding: 0.2rem 0.8rem; /* VERY small padding */
+    padding: 0.3rem 1rem; /* small mobile padding */
   }
 
   .nav-logo {
-    font-size: 1rem; /* smaller logo text */
+    font-size: 1rem;
+  }
+
+  .hamburger {
+    display: block;
   }
 
   .nav-links {
-    display: flex;
-    flex-direction: column;
+    position: absolute;
+    top: 55px;
+    right: 0;
     width: 100%;
-    gap: 0.2rem; /* tighter spacing */
+    background-color: pink;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    padding: 0.5rem 0;
   }
 
   .nav-links a {
-    margin: 0.2rem 0; /* reduce vertical space */
-    font-size: 0.9rem;
+    margin: 0.4rem 0;
+  }
+
+  .nav-links.active {
+    display: flex;
   }
 }
