@@ -5,11 +5,12 @@ import "../styles/Navbar.css";
 export default function Navbar() {
   const [active, setActive] = useState("#hero");
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false); // 👈 Added for hamburger
 
-  // Track scroll to highlight active section and add shadow
+  // Track scroll
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["#hero", "#about", "#skills", "#projects", "#contact"];
+      const sections = ["#hero", "#about", "#skills", "#services", "#projects", "#contact"];
       const scrollPos = window.scrollY + 100;
 
       setScrolled(scrollPos > 50);
@@ -31,7 +32,7 @@ export default function Navbar() {
     { name: "Home", href: "#hero" },
     { name: "About", href: "#about" },
     { name: "Skills", href: "#skills" },
-     { name: "Services", href: "#services" },
+    { name: "Services", href: "#services" },
     { name: "Projects", href: "#projects" },
     { name: "Contact", href: "#contact" },
   ];
@@ -45,12 +46,19 @@ export default function Navbar() {
     >
       <span className="nav-logo">Josephine Anyango</span>
 
-      <div className="nav-links">
+      {/* ✅ Hamburger Button */}
+      <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+        ☰
+      </div>
+
+      {/* ✅ Nav Links */}
+      <div className={`nav-links ${menuOpen ? "active" : ""}`}>
         {links.map((link) => (
           <a
             key={link.href}
             href={link.href}
             className={active === link.href ? "active" : ""}
+            onClick={() => setMenuOpen(false)} // close menu after click
           >
             {link.name}
           </a>
